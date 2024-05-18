@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+=======
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +72,5 @@
 
 .read-the-docs {
   color: #888;
+>>>>>>> main
 }
