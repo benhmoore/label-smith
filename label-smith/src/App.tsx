@@ -1,9 +1,14 @@
 // src/App.tsx
 import React, { useState, useEffect } from 'react';
+
+import Container from 'react-bootstrap/Container';
+
+import AppMenu from './components/AppMenu';
+
 import axios from 'axios';
 import FileList from './components/FileList';
 import FileContent from './components/FileContent';
-import './App.scss';
+import './sass/App.scss';
 
 const App: React.FC = () => {
   const [files, setFiles] = useState<string[]>([]);
@@ -35,7 +40,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+    <Container fluid>
+      <AppMenu onMenuClick={() => {}} />
       <h1>File List</h1>
       <FileList files={files} onFileClick={handleFileClick} />
       {fileContent && (
@@ -45,7 +51,7 @@ const App: React.FC = () => {
           onSync={handleSyncFile}
         />
       )}
-    </div>
+    </Container>
   );
 };
 
